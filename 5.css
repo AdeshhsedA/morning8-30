@@ -1,0 +1,26 @@
+.text
+{
+	/*color: red;*/
+	font-size: 27px;
+	font-family: gabriola;
+	font-weight: bold;
+	/*text-align: center;*/
+	text-align: justify;
+	line-height: 40px;
+	word-spacing: 10px;
+	letter-spacing: 10px;
+	/*text-transform: capitalize;*/
+	/*text-transform: uppercase;*/
+	text-transform: lowercase;
+}
+.link
+{
+	font-size: 100px;
+	text-decoration: none;
+	/*text-decoration: line-through;*/
+	color: black;
+	text-shadow: 3px 3px 3px red;
+}
+
+
+
