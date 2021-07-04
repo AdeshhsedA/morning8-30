@@ -1,0 +1,150 @@
+.box0
+{
+	height:300px;
+	width:100%;
+}
+.box1
+{
+	background: maroon;
+}
+.box2
+{
+	background: linear-gradient(to left top, pink, cyan, skyblue);
+}
+.box3
+{
+	background: radial-gradient(hotpink,red,green);
+}
+.box4
+{
+	background: url('img/36307.jpg');
+	background-size: 100% auto;
+	/*background-size: auto 100%; */
+	/*background-position: bottom;*/
+	background-repeat: no-repeat;
+}
+.box5
+{
+	background: url('img/36307.jpg');
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+
+
+.box01
+{
+	height: 300px;
+	width: 300px;
+}
+.box6
+{
+	border:3px solid red;
+	border-top-left-radius: 300px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 100px;
+}
+.box7
+{
+	border-left: 3px solid green;
+	border-top: 5px dotted yellow;
+	border-bottom: 3px solid pink;
+	border-right: 7px dotted grey;
+	border-radius: 155px;
+}
+
+.parent
+{
+	height: 300px;
+	width: 300px;
+	background: maroon;
+}
+
+.child
+{
+	height: 100px;
+	width: 100px;
+	background: yellow;
+	display: none;
+}
+
+/*
+.child:hover
+{
+	color: white;
+	font-weight: bold;
+}
+*/
+
+.parent:hover .child
+{
+	color: red;
+	display: block;
+}
+
+.list1 li
+{
+	display: inline;
+	padding: 10px;
+}
+.list1 li:hover
+{
+	background: maroon;
+	color: white;
+}
+
+.pad
+{
+	height: 200px;
+	width: 200px;
+	background: red;
+	/*padding: 50px;*/
+	/*padding-left: 50px;*/
+	/*padding-top: 50px;*/
+	/*padding-bottom: 50px;*/
+	/*padding-right: 50px;*/
+}
+.mar
+{
+	height: 200px;
+	width: 200px;
+	background: green;
+	/*margin: 50px;*/
+	/*margin-left: 50px;*/
+	/*margin-right: 50px;*/
+	/*margin-top: 50px;*/
+	/*margin-bottom: 50px;*/
+}
+
+
+.op1
+{
+	height: 100px;
+	width: 100px;
+	background: red;
+}
+.op2
+{
+	height: 100px;
+	width: 100px;
+	background: green;
+	margin-top: -50px;
+	margin-left: 50px;
+	opacity: .9;
+}
+
+
+.over
+{
+	height: 100px;
+	width: 100px;
+	background: pink;
+	/*overflow: hidden;*/
+	overflow-y: scroll;
+	float: right;
+}
+
+
+
+
+

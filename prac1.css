@@ -1,0 +1,75 @@
+html,body
+{
+	padding: 0px;
+	margin: 0px;
+}
+.nav
+{
+	height: 70px;
+	width: 100%;
+	background: maroon;
+}
+.slider
+{
+	height: 400px;
+	width: 100%;
+	background: green;
+}
+.left
+{
+	height: 400px;
+	width: 50%;
+	background: cyan;
+}
+.right
+{
+	height: 400px;
+	width: 50%;
+	background: skyblue;
+	position: absolute;
+	right: 0px;
+	top: 470px;
+}
+/*.left1,.left2,.left3
+{
+	height: 100px;
+	width: 100px;
+*/
+.left1
+{
+	height: 2px;
+	width: 2px;
+	background: red;
+	position: absolute;
+	margin-top: 100px;
+	animation: gg 4s linear 1;
+}
+@keyframes gg{
+	100%{
+		width: 100px;
+	}
+}
+
+
+/*.left2
+{
+	background: yellow;
+	margin-left: 15%;
+	margin-top: -50px;
+	z-index: 1;
+}
+.left3
+{
+	background: pink;
+	margin-left: 20%;
+	margin-top: -50px;
+	z-index: 0;
+}*/
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+.box
+{
+	height: 100px;
+	width: 100px;
+	background: red;
+	animation: gif 4s linear infinite;
+}
+
+@keyframes gif{
+	25%{
+		background: blue;
+	}
+	50%{
+		background: green;
+	}
+	75%{
+		background: yellow;
+	}
+	100%{
+		background: red;
+	}
+}
+
+
+
+.box2
+{
+	height: 150px;
+	width: 2px;
+	background: black;
+	margin-left: 50%;
+	/*animation: lmn 2s ease infinite;*/
+	animation: lmn 60s linear infinite;
+	transform-origin: 0% 100%;
+}
+@keyframes lmn{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+
+
+
