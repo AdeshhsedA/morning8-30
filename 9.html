@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<input type="text" id="inp1" placeholder="Inp 1">
+
+<input type="text" id="inp2" placeholder="Inp 2">
+
+<button type="button" onclick="bcd()">Click Me</button>
+
+<p id="sum"></p>
+
+<script type="text/javascript">
+
+	// parseInt()
+	// parseFloat()
+	// toString()
+
+	
+	function bcd(){
+		var a = parseFloat(document.getElementById('inp1').value);
+		var b = parseFloat(document.getElementById('inp2').value);
+
+		document.getElementById('sum').innerHTML = a+b;
+		console.log(a)
+		console.log(1);
+		console.log('1');
+	}
+
+</script>
+
+
+
+<p id="ab"></p>
+
+<!-- 
+
+font-size:100px;
+.style.fontSize = '100px'; 
+
+ -->
+
+
+<input type="text" id="name" onkeyup="abc()">
+
+
+<input type="text" id="copyname">
+
+<button type="button" onclick="abc()">Click</button>
+
+<p id="print"></p>
+
+<img id="pqr">
+
+
+<script type="text/javascript">
+
+
+	var l = "Hello";
+	var m = 20;
+	var n = 20.5;
+	var o = true;
+
+
+
+	document.write('Hello');
+
+	document.write(m);
+
+	document.write(30);
+
+	// alert('Sry, server issue, please try again');
+	// alert('Congrats, your form is submited, we will contact you soon');
+
+
+	document.getElementById('ab').innerHTML = 'Hello World';
+	document.getElementById('ab').style.fontSize = '100px';
+	document.getElementById('ab').style.color = 'red';
+	document.getElementById('ab').style.background = 'grey';
+
+
+
+	// function abc(){
+	// 	alert('hi');
+	// }
+
+
+
+	function abc(){
+		var a = document.getElementById('name').value;
+		// document.getElementById('print').innerHTML = a;
+		document.getElementById('copyname').value = a;
+	}
+
+	document.getElementById('pqr').src = 'img/36307.jpg';
+	document.getElementById('pqr').style.height='100px';
+
+
+	var a = 20;
+	var b = '20';
+	var c = 30;
+
+	// =
+	// ==
+	// ===
+
+
+	if (a == b) {
+
+		if (a === b) {
+			console.log('a value and type matched with b')
+			document.write('a value and type matched with b');
+		}else{
+			console.log('a value matched with b, but type differ');
+			document.write('a value matched with b, but type differ');
+		}
+
+	}else if (a == c) {
+		document.write('a == c true');
+	}else{
+		document.write('false');
+	}
+
+
+
+
+
+	for (var i = 0; i < 10; i++) {
+		console.log(i + ' is even');
+	}
+
+
+		// *
+	 //   * *
+	 // * * * *
+  //  * * * * * * 
+  //  row = 4
+  //  stars = 13
+
+
+  //      *
+  //    * * *
+  //  * * * * * 
+  //  row = 3
+  //  stars = 9
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
