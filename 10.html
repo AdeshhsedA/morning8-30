@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<form onsubmit="">
+	
+	<input type="submit" name="">
+
+</form>
+
+<form id="myform">
+
+	<br>
+	<input type="text" id="name" onkeyup="check()" autofocus placeholder="Fill your name"><br>
+	<input type="text" id="email" onkeyup="check()" placeholder="Fill your email"><br>
+	<input type="text" id="contact" onkeyup="check()" placeholder="Fill your contact"><br>
+	<input type="button" onclick="formsubmit()" value="Submit">
+
+</form>
+
+
+<script type="text/javascript">
+
+	function check(){
+		var x = event.which || event.keyCode;
+		// console.log(x);
+		if (x == 13) {
+			formsubmit();
+		}
+	}
+
+
+	function formsubmit(){
+		var na = document.getElementById('name').value;
+		var em = document.getElementById('email').value;
+		var ct = document.getElementById('contact').value;
+
+		var check_na = /^[A-Za-z ]+$/;
+		var check_em = /^[a-z][a-z0-9_]+[a-z0-9]+[@][a-z]+[.][a-z]{2,5}[.a-z]*$/;
+		var check_ct = /^[0-9]{10}$/;
+
+		if (na == '') {
+			alert('Please fill name field');
+			document.getElementById('name').focus();
+		}else if(em == ''){
+			alert('Please fill email field');
+			document.getElementById('email').focus();			
+		}else if(ct == ''){
+			alert('Please fill contact field');
+			document.getElementById('contact').focus();			
+		}else if(!check_na.test(na)){
+			alert('Please fill Alpha only');
+			document.getElementById('name').focus();			
+		}else if(!check_em.test(em)){
+			alert('Please fill valid email');
+			document.getElementById('email').focus();			
+		}else if(!check_ct.test(ct)){
+			alert('Please fill valid contact');
+			document.getElementById('contact').focus();			
+		}else{
+			alert('Form Submitted');
+			document.getElementById('myform').reset();
+		}
+	}
+
+
+
+
+
+	var names = ["Red","Blue","Green","Yellow"];
+	// var name = [1, 5, 8, 6, 1];
+	// document.write(names[0]);
+	for (var i = 0; i < names.length; i++) {
+		document.write(names[i]+'<br>');
+	}
+
+
+	var date = new Date();
+
+	document.write(date+'<br>');
+
+	document.write(date.getDate()+'<br>');
+
+	document.write(date.getMonth()+1+'<br>');
+
+	document.write(date.getFullYear()+'<br>');
+
+	document.write(date.getDate()+'-'+(date.getMonth()+1)+'-'+date.getFullYear()+'<br>');
+
+	document.write('<br>');
+
+	document.write(Math.PI);
+
+	document.write('<br>');
+
+	document.write(Math.random());
+
+	document.write('<br>');
+
+	document.write(Math.floor(Math.random()*10000));
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
