@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		
+
+		$(document).ready(function(){
+
+			$('#ab').click(function(){
+				$('#txt').hide();
+			})
+
+			$('#abc').click(function(){
+				$('#txt').show();
+			})
+			// toggle
+			// fadeIn
+			// fadeOut
+			// fadeToggle
+			// slideUp
+			// slideDown
+			// slideToggle
+			// val
+			// text
+			// html
+
+			$('[data-toggle="tooltip"]').tooltip();
+
+			$('[data-toggle="popover"]').popover();
+
+		})
+
+	</script>
+</head>
+<body>
+	<div class="col-lg-4">
+		<div class="well">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+
+	<button id="ab">Click 1</button>
+	<button id="abc">Click 2</button>
+
+	<p id="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+	<a href="#" data-toggle="tooltip" data-placement="bottom" title="Hello">Click</a>
+
+	<a href="#" data-toggle="tooltip" data-placement="top" title="Hello">Click</a>
+
+	<a href="#" data-toggle="tooltip" data-placement="left" title="Hello">Click</a>
+
+	<a href="#" data-toggle="tooltip" data-placement="right" title="Hello">Click</a>
+
+	<a href="#" data-toggle="popover" title="Hello" data-content="My name is naveen">Click</a>
+
+
+
+</body>
+</html>
