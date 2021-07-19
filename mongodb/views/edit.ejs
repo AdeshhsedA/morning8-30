@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+</head>
+<body>
+<a href="/">Home</a>
+<a href="/about">About</a>
+<form action="/update" method="post">
+	<input type="hidden" name="id" readonly value="<%= data._id %>">
+	<input type="text" name="name" placeholder="Name" value="<%= data.name %>"><br>
+	<input type="text" name="email" placeholder="Email" value="<%= data.email %>"><br>
+	<input type="text" name="password" placeholder="Password" value="<%= data.password %>"><br>
+	<input type="submit" value="Submit">
+</form>
+
+
+
+
+
+</body>
+</html>
